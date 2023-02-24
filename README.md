@@ -6,4 +6,4 @@
 
 ### Projects
 #### Poker
-- [determine the winning poker hands](poker/poker.py)
+- [determine the winning poker hands](cs212-Design-of-Computer-Programs/poker/poker.py)
