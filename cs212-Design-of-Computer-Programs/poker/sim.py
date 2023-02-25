@@ -1,11 +1,13 @@
 """
-Simulate results of poker games
+Simulate hand of poker games
 """
 import random
 from poker import hand_rank
 
-hand_names = ['Straight Flush',
-              '4 Kinnd',
+hand_names = ['',
+              'Straight Flush',
+              '',
+              '4 Kind',
               'Full House',
               'Flush',
               'Straight',
@@ -21,7 +23,7 @@ def deal(numhands, n=5, deck=[r+s for r in '23456789TJQKA' for s in 'SHDC']):
 
 
 def hand_percentages(n=700*1000):
-    counts = [0] * 9
+    counts = [0] * 11
     for _ in range(n // 10):
         for hand in deal(10):
             rank = hand_rank(hand)
